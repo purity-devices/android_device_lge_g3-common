@@ -570,7 +570,7 @@ on property:service.bootanim.exit=1
 
     write /sys/class/kgsl/kgsl-3d0/devfreq/governor msm-adreno-tz
 
-    setprop sys.io.scheduler sioplus
+    setprop sys.io.scheduler bfq
 
     write /sys/module/lpm_levels/enable_low_power/l2 "4"
     write /sys/module/msm_pm/modes/cpu0/power_collapse/suspend_enabled "1"
